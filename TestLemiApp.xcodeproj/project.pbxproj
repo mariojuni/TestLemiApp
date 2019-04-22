@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9540FAF885DC5AFB1CA60119 /* Pods_TestLemiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A8C2DAE8AD425EDD04D4D9 /* Pods_TestLemiApp.framework */; };
 		9D3471B5226D782000B15294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3471B4226D782000B15294 /* AppDelegate.swift */; };
 		9D3471B7226D782000B15294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3471B6226D782000B15294 /* ViewController.swift */; };
 		9D3471BA226D782000B15294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3471B8226D782000B15294 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65B5B1544F9773817140E1ED /* Pods-TestLemiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLemiApp.debug.xcconfig"; path = "Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1D6C4C2538A4EE232BEDBA /* Pods-TestLemiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLemiApp.release.xcconfig"; path = "Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp.release.xcconfig"; sourceTree = "<group>"; };
 		9D3471B1226D782000B15294 /* TestLemiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLemiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3471B4226D782000B15294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3471B6226D782000B15294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9D3471BB226D782300B15294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3471BE226D782300B15294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D3471C0226D782300B15294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A8C2DAE8AD425EDD04D4D9 /* Pods_TestLemiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLemiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9540FAF885DC5AFB1CA60119 /* Pods_TestLemiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D85AEB82988F74D7B6583D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A8C2DAE8AD425EDD04D4D9 /* Pods_TestLemiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D3471A8226D782000B15294 = {
 			isa = PBXGroup;
 			children = (
 				9D3471B3226D782000B15294 /* TestLemiApp */,
 				9D3471B2226D782000B15294 /* Products */,
+				FD5B2099470CD03CE6CF6D64 /* Pods */,
+				6D85AEB82988F74D7B6583D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = TestLemiApp;
 			sourceTree = "<group>";
 		};
+		FD5B2099470CD03CE6CF6D64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65B5B1544F9773817140E1ED /* Pods-TestLemiApp.debug.xcconfig */,
+				9D1D6C4C2538A4EE232BEDBA /* Pods-TestLemiApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D3471C3226D782300B15294 /* Build configuration list for PBXNativeTarget "TestLemiApp" */;
 			buildPhases = (
+				1127730F777D26BA07947A89 /* [CP] Check Pods Manifest.lock */,
 				9D3471AD226D782000B15294 /* Sources */,
 				9D3471AE226D782000B15294 /* Frameworks */,
 				9D3471AF226D782000B15294 /* Resources */,
+				119A84215731EC56953408B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1127730F777D26BA07947A89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestLemiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		119A84215731EC56953408B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D3471AD226D782000B15294 /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		9D3471C4226D782300B15294 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B5B1544F9773817140E1ED /* Pods-TestLemiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +377,7 @@
 		};
 		9D3471C5226D782300B15294 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1D6C4C2538A4EE232BEDBA /* Pods-TestLemiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
