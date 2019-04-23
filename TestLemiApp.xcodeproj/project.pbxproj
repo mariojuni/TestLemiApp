@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		9540FAF885DC5AFB1CA60119 /* Pods_TestLemiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A8C2DAE8AD425EDD04D4D9 /* Pods_TestLemiApp.framework */; };
 		9D3471B5226D782000B15294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3471B4226D782000B15294 /* AppDelegate.swift */; };
-		9D3471B7226D782000B15294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3471B6226D782000B15294 /* ViewController.swift */; };
+		9D3471B7226D782000B15294 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3471B6226D782000B15294 /* MainViewController.swift */; };
 		9D3471BA226D782000B15294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3471B8226D782000B15294 /* Main.storyboard */; };
 		9D3471BC226D782300B15294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3471BB226D782300B15294 /* Assets.xcassets */; };
 		9D3471BF226D782300B15294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3471BD226D782300B15294 /* LaunchScreen.storyboard */; };
+		9D8C00E9226D9332000BABAB /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00E8226D9332000BABAB /* SearchTableViewController.swift */; };
+		9D8C00EF226DA009000BABAB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00EE226DA009000BABAB /* SearchViewModel.swift */; };
+		9D8C00F4226DA027000BABAB /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00F1226DA027000BABAB /* ViewModelType.swift */; };
+		9D8C00F5226DA027000BABAB /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00F2226DA027000BABAB /* UIViewController+Rx.swift */; };
+		9D8C00F6226DA027000BABAB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00F3226DA027000BABAB /* ActivityIndicator.swift */; };
+		9D8C00FA226DA1B4000BABAB /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00F9226DA1B4000BABAB /* SearchCell.swift */; };
+		9D8C00FC226DA2FB000BABAB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00FB226DA2FB000BABAB /* City.swift */; };
+		9D8C00FE226DA679000BABAB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00FD226DA679000BABAB /* APIClient.swift */; };
+		9D8C0100226DA784000BABAB /* APIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C00FF226DA784000BABAB /* APIExtension.swift */; };
+		9D8C0102226DBAA8000BABAB /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C0101226DBAA8000BABAB /* Observable+Ext.swift */; };
+		9D8C0104226DBBF0000BABAB /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C0103226DBBF0000BABAB /* ErrorTracker.swift */; };
+		9D8C0108226EAA3C000BABAB /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C0107226EAA3C000BABAB /* FailableDecodable.swift */; };
+		9D8C010A226F116B000BABAB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C0109226F116B000BABAB /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +33,24 @@
 		9D1D6C4C2538A4EE232BEDBA /* Pods-TestLemiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLemiApp.release.xcconfig"; path = "Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp.release.xcconfig"; sourceTree = "<group>"; };
 		9D3471B1226D782000B15294 /* TestLemiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLemiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3471B4226D782000B15294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D3471B6226D782000B15294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D3471B6226D782000B15294 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9D3471B9226D782000B15294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D3471BB226D782300B15294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3471BE226D782300B15294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D3471C0226D782300B15294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8C00E8226D9332000BABAB /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		9D8C00EE226DA009000BABAB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9D8C00F1226DA027000BABAB /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		9D8C00F2226DA027000BABAB /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		9D8C00F3226DA027000BABAB /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		9D8C00F9226DA1B4000BABAB /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		9D8C00FB226DA2FB000BABAB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9D8C00FD226DA679000BABAB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9D8C00FF226DA784000BABAB /* APIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExtension.swift; sourceTree = "<group>"; };
+		9D8C0101226DBAA8000BABAB /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		9D8C0103226DBBF0000BABAB /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		9D8C0107226EAA3C000BABAB /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
+		9D8C0109226F116B000BABAB /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D5A8C2DAE8AD425EDD04D4D9 /* Pods_TestLemiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLemiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,8 +95,11 @@
 		9D3471B3226D782000B15294 /* TestLemiApp */ = {
 			isa = PBXGroup;
 			children = (
+				9D8C00F0226DA012000BABAB /* Utils */,
+				9D8C00EB226D9F67000BABAB /* Search */,
+				9D8C00EA226D9808000BABAB /* Model */,
 				9D3471B4226D782000B15294 /* AppDelegate.swift */,
-				9D3471B6226D782000B15294 /* ViewController.swift */,
+				9D3471B6226D782000B15294 /* MainViewController.swift */,
 				9D3471B8226D782000B15294 /* Main.storyboard */,
 				9D3471BB226D782300B15294 /* Assets.xcassets */,
 				9D3471BD226D782300B15294 /* LaunchScreen.storyboard */,
@@ -79,13 +108,46 @@
 			path = TestLemiApp;
 			sourceTree = "<group>";
 		};
+		9D8C00EA226D9808000BABAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D8C00FB226DA2FB000BABAB /* City.swift */,
+				9D8C00FD226DA679000BABAB /* APIClient.swift */,
+				9D8C0107226EAA3C000BABAB /* FailableDecodable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D8C00EB226D9F67000BABAB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9D8C00E8226D9332000BABAB /* SearchTableViewController.swift */,
+				9D8C00EE226DA009000BABAB /* SearchViewModel.swift */,
+				9D8C00F9226DA1B4000BABAB /* SearchCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		9D8C00F0226DA012000BABAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D8C00F3226DA027000BABAB /* ActivityIndicator.swift */,
+				9D8C00F2226DA027000BABAB /* UIViewController+Rx.swift */,
+				9D8C0103226DBBF0000BABAB /* ErrorTracker.swift */,
+				9D8C00F1226DA027000BABAB /* ViewModelType.swift */,
+				9D8C00FF226DA784000BABAB /* APIExtension.swift */,
+				9D8C0101226DBAA8000BABAB /* Observable+Ext.swift */,
+				9D8C0109226F116B000BABAB /* Reusable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FD5B2099470CD03CE6CF6D64 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				65B5B1544F9773817140E1ED /* Pods-TestLemiApp.debug.xcconfig */,
 				9D1D6C4C2538A4EE232BEDBA /* Pods-TestLemiApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +252,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestLemiApp/Pods-TestLemiApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -198,7 +264,11 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +283,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3471B7226D782000B15294 /* ViewController.swift in Sources */,
+				9D8C00E9226D9332000BABAB /* SearchTableViewController.swift in Sources */,
+				9D8C00FA226DA1B4000BABAB /* SearchCell.swift in Sources */,
+				9D8C00FC226DA2FB000BABAB /* City.swift in Sources */,
+				9D3471B7226D782000B15294 /* MainViewController.swift in Sources */,
+				9D8C0102226DBAA8000BABAB /* Observable+Ext.swift in Sources */,
+				9D8C0104226DBBF0000BABAB /* ErrorTracker.swift in Sources */,
+				9D8C0100226DA784000BABAB /* APIExtension.swift in Sources */,
+				9D8C00EF226DA009000BABAB /* SearchViewModel.swift in Sources */,
+				9D8C00F4226DA027000BABAB /* ViewModelType.swift in Sources */,
+				9D8C010A226F116B000BABAB /* Reusable.swift in Sources */,
+				9D8C00F6226DA027000BABAB /* ActivityIndicator.swift in Sources */,
+				9D8C00FE226DA679000BABAB /* APIClient.swift in Sources */,
+				9D8C00F5226DA027000BABAB /* UIViewController+Rx.swift in Sources */,
 				9D3471B5226D782000B15294 /* AppDelegate.swift in Sources */,
+				9D8C0108226EAA3C000BABAB /* FailableDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

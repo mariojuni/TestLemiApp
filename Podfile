@@ -7,7 +7,9 @@ target 'TestLemiApp' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
-  
+  pod 'RxDataSources'
+  pod 'IBAnimatable'
+  pod 'Nuke'
   # Pods for TestLemiApp
 
 end
