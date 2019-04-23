@@ -1,5 +1,7 @@
 # TestLemiApp
 
+the project used mvvm architecture using RxSwift , RxCocoa , Alamofire ,Nuke and IBanimatable libraries
+
 download xcode 10.2.1
 install cocoapods
 using terminal  with the command of : "sudo gem install cocoapods"
