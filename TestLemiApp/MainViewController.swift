@@ -17,8 +17,9 @@ class MainViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationItem.hidesBackButton = true
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+          self.navigationItem.setHidesBackButton(true, animated:false)
     }
 
 }

@@ -19,12 +19,14 @@ class SearchTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.titleView = searchBar
         searchBar.placeholder = "Search City"
         searchBar.sizeToFit()
-        self.navigationItem.titleView = searchBar
+
         tableView.dataSource = nil
         tableView.delegate = nil
-
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         bindViewModel()
    
     }
@@ -39,6 +41,8 @@ class SearchTableViewController: UITableViewController {
         }.disposed(by: disposeBag)
 
         tableView.rx.modelSelected(City.self).subscribe {  city in
+            
+            // to navigation in main view controller
             let nextVC = self.sb.instantiateViewController(ofType: MainViewController.self)
             nextVC.strLocation = "You selected :  \(String(describing: city.element!.name!))"
             self.navigationController?.pushViewController(nextVC, animated: true)
