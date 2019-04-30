@@ -8,19 +8,23 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+
+class MainViewController: UIViewController , ChildViewController{
+    func getLocation(loc: String) {
+        lblLocation.text = loc
+    }
+    
     @IBOutlet weak var lblLocation: UILabel!
-    var strLocation: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblLocation.text = strLocation
-        
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
-         super.viewWillAppear(animated)
-          self.navigationItem.setHidesBackButton(true, animated:false)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "prepareToSearch"{
+        let nextVC = segue.destination as! SearchTableViewController
+            nextVC.delegate = self
+        }
     }
-
+   
 }
 
